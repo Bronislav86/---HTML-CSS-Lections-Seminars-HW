@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+body {
+  scroll-behavior: smooth;
+  background: white;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.header {
+  padding-top: 40px;
+  margin-bottom: 84px;
+}
+
+.conteiner {
+  max-width: 1174px;
+  margin: 0 auto;
+}
+
+a, h1, p, button {
+  font-family: "Inter", sans-serif;
+  color: black;
+}
+
+.navigation {
+  margin: 1.5px;
+  color: rgb(0, 0, 0);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.Home {
+  color: rgb(242, 88, 34);
+}
+
+.main {
+  margin-bottom: 100px;
+}
+
+.mainContent{}
+
+.mainContent__leftSide h1{
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 120%;
+  margin-bottom: 20px;
+}
+
+.mainContent__leftSide p {
+  color: rgb(136, 136, 136);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 140%;
+  margin-bottom: 32px;
+}
+
+.mainContent__leftSide-btns button {
+  font-size: 16px;
+  font-weight: 600;
+  padding: 16px 31px;
+  border: none;
+  border-radius: 56px;
+  cursor: pointer;
+}
+
+.mousOnButton {
+  color: rgb(255, 255, 255);
+  box-shadow: 4px 4px 8px 0px rgba(242, 88, 34, 0.2);
+  background: rgb(242, 88, 34);
+}
+
+.mousOffButton {
+  color: rgb(170, 170, 170);
+  background: none;
+}
+
+.footer{
+  
+}
+
+.brandLogo {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
