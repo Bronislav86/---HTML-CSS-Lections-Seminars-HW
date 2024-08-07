@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 1200px;
+}
+
+.header {
+  max-width: 1200px;
+  min-height: 100vh;
+  border: 1px solid black;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background: grey;
+}
+
+.item {
+  width: 33.333333vw;
+  height: 50vh;
+  overflow: scroll;
+  border: 1px solid black;
+  box-sizing: border-box;
+}
