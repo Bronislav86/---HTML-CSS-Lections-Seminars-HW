@@ -198,6 +198,9 @@ margin-bottom: 24px;
   flex-direction: column;
   align-items: center;
   background: #ffffff;
+}
+
+.card2BottomContent {
   padding: 0px 34px 34px 34px;
 }
 
