@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+body {
+  scroll-behavior: smooth;
+  background: white;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.header {
+  padding-top: 40px;
+  margin-bottom: 84px;
+}
+
+.conteiner {
+  max-width: 1174px;
+  margin: 0 auto;
+}
+
+a, h1, p, button, h2 {
+  font-family: "Inter", sans-serif;
+  color: black;
+}
+
+.headerConteiner {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: space-between;
+}
+
+.navigation {
+  display: flex;
+  justify-content: flex-end;
+  gap: 14px;
+  margin: 1.5px;
+  color: rgb(0, 0, 0);
+  font-size: 14px;
+  font-weight: 600;
+}
+.navigation a {
+  margin: 10px;
+}
+
+.Home {
+  color: rgb(242, 88, 34);
+}
+
+.main {
+  margin-bottom: 200px;
+}
+
+.mainContent{
+  display: flex;
+  justify-content: space-between;
+}
+
+.mainContent__leftSide {
+  max-width: 556px;
+}
+
+.mainContent__leftSide h1{
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 120%;
+  margin-bottom: 20px;
+}
+
+.mainContent__leftSide p {
+  color: rgb(136, 136, 136);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 140%;
+  margin-bottom: 32px;
+}
+
+.mainContent__leftSide-btns {
+  width: 556px;
+  display: flex;
+  gap: 48px;
+}
+
+.mainContent__leftSide-btns button {
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 56px;
+  cursor: pointer;
+}
+
+.mousOnButton {
+  color: rgb(255, 255, 255);
+  box-shadow: 4px 4px 8px 0px rgba(242, 88, 34, 0.2);
+  background: rgb(242, 88, 34);
+  padding: 16px 31px;
+}
+
+.mousOffButton {
+  color: rgb(170, 170, 170);
+  background: none;
+  padding: 16px 0px;
+}
+
+.brandLogo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 259px;
+  margin-bottom: 100px;
+}
+
+.topCards {
+  padding: 100px 0;
+  display: flex;
+  align-items: center;
+  gap: 61px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.card img {
+  margin-bottom: 25px;
+}
+
+.card h2 {
+  margin-bottom: 18px;
+  font-size: 24px;
+font-weight: 700;
+line-height: 29px;
+}
+.card p {
+  margin-bottom: 25px;
+  font-size: 14px;
+font-weight: 400;
+line-height: 150%;
+}
+
+.card a {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 150%;
+}
+
+.centralCard {
+  padding: 40px 34px;
+  box-shadow: 15px 25px 56px 6px rgba(0, 0, 0, 0.06);
+  background: rgb(255, 255, 255);
+}
+
+.bottomContent {
+  background: rgb(250, 250, 250);
+  text-align: center;
+  padding: 100px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.bottomContent h1 {
+  font-size: 48px;
+font-weight: 700;
+line-height: 120%;
+margin-bottom: 24px;
+}
+
+.topParagraf {
+  color: rgb(136, 136, 136);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 140%;
+  margin-bottom: 48px;
+  max-width: 740px;
+}
+
+.bottomCards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.card2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #ffffff;
+}
+
+.card2BottomContent {
+  padding: 0px 34px 34px 34px;
+}
+
+.focusCard {
+  box-shadow: 15px 25px 56px 6px rgba(0, 0, 0, 0.06);
+}
+
+.card2 img {
+  margin-bottom: 32px;
+}
+.card2 h2 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29px;
+  margin-bottom: 16px;
+}
+
+.card2 p {
+  color: rgb(102, 102, 102);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  margin-bottom: 24px;
+  max-width: 310px;
+}
+
+.card2 button {
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 56px;
+  cursor: pointer;
+}
+
+.card2 a {
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19px;
+}
