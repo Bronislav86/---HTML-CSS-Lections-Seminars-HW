@@ -16,7 +16,11 @@ img {
   max-width: 100%;
 }
 
-h1, h2, p, a, button {
+h1,
+h2,
+p,
+a,
+button {
   color: #ffffff;
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
@@ -26,32 +30,29 @@ h1, h2, p, a, button {
   max-width: 1146px;
   margin: 0 auto;
 }
-.header{
+
+.header {
   padding: 39px 0;
   margin-bottom: 160px;
 }
 
-.nvigation{
+.nvigation {
   display: flex;
   justify-content: center;
   gap: 32px;
-}
-
-
-.main{
 }
 
 .nvigation a {
   font-size: 16px;
 }
 
-.mainContent{
+.mainContent {
   display: flex;
   justify-content: space-between;
   margin-bottom: 157px;
 }
 
-.mainContent__leftSide{
+.mainContent__leftSide {
   max-width: 604px;
 }
 
@@ -98,7 +99,7 @@ h1, h2, p, a, button {
   cursor: pointer;
 }
 
-.logos{
+.logos {
   display: flex;
   justify-content: space-between;
   margin-bottom: 100px;
@@ -109,6 +110,10 @@ h1, h2, p, a, button {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
   gap: 30px;
+}
+
+.redText {
+  color: red;
 }
 
 .card {
@@ -124,7 +129,7 @@ h1, h2, p, a, button {
 
 .card-big {
   grid-column: span 2;
-  grid-row:span 2;
+  grid-row: span 2;
   gap: 60px;
 }
 
@@ -166,7 +171,7 @@ h1, h2, p, a, button {
     font-size: 48px;
   }
 
-  .logos{
+  .logos {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -186,6 +191,7 @@ h1, h2, p, a, button {
   .hidenCard {
     display: none;
   }
+
   .card {
     max-width: 362px;
     backdrop-filter: blur(200px);
