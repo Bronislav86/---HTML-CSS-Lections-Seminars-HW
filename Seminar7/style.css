@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+body {
+  scroll-behavior: smooth;
+  background: #020A18;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+h1,
+h2,
+p,
+a,
+button {
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+}
+
+.conteiner {
+  max-width: 1146px;
+  margin: 0 auto;
+}
+
+.header {
+  padding: 39px 0;
+  margin-bottom: 160px;
+}
+
+.nvigation {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+}
+
+.nvigation a {
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.mainContent {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 157px;
+}
+
+.mainContent__leftSide {
+  max-width: 604px;
+}
+
+.mainContent__leftSide h2 {
+  color: rgb(58, 104, 184);
+  font-size: 18px;
+  line-height: 160%;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.mainContent__leftSide h1 {
+  color: rgb(255, 255, 255);
+  font-size: 55px;
+  font-weight: 800;
+  line-height: 130%;
+  margin-bottom: 40px;
+}
+
+.mainContent__leftSide p {
+  max-width: 558px;
+  font-size: 18px;
+  line-height: 160%;
+  opacity: 0.7;
+  margin-bottom: 50px;
+}
+
+.mainContent__leftSide-btnList {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+
+.mainContent__leftSide-btnList button {
+  display: flex;
+  gap: 10px;
+  padding: 15px 30px;
+  border-radius: 5px;
+  background: rgb(58, 104, 184);
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.logos {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+
+.cardList {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.redText {
+  color: red;
+}
+
+.card {
+  border-radius: 10px;
+  background: rgb(19, 32, 53);
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  text-align: center;
+}
+
+.card-big {
+  grid-column: span 2;
+  grid-row: span 2;
+  gap: 60px;
+}
+
+.card h2 {
+  font-family: Open Sans;
+  opacity: 0.7;
+  font-family: Open Sans;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 125%;
+}
+
+.card p {
+  opacity: 0.7;
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 160%;
+}
+
+@media (min-width: 848px) and (max-width: 1146px) {
+  .conteiner {
+    max-width: 768;
+  }
+
+  .mainContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 197px;
+    gap: 128px;
+  }
+
+  .mainContent__leftSide h2 {
+    font-size: 18px;
+  }
+
+  .mainContent__leftSide h1 {
+    font-size: 48px;
+  }
+
+  .logos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 32px;
+    max-width: 535px;
+    margin-bottom: 120px;
+  }
+
+  .cardList {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    justify-items: center;
+  }
+
+  .hidenCard {
+    display: none;
+  }
+
+  .card {
+    max-width: 362px;
+    backdrop-filter: blur(200px);
+    background: #151D2A;
+  }
+}
+
+@media (max-width: 847px) {
+  .conteiner {
+    max-width: 343px;
+  }
+
+  .header {
+    padding: 22px 0;
+    margin-bottom: 64px;
+  }
+
+  .nvigation a {
+    font-size: 14px;
+    line-height: 19px;
+  }
+
+  .nvigation {
+    gap: 16px;
+  }
+
+  .mainContent {
+    flex-direction: column;
+    align-items: center;
+    gap: 128px;
+  }
+
+  .mainContent__leftSide {
+    max-width: 343px;
+    text-align: center;
+  }
+
+  .mainContent__leftSide h2 {
+    font-size: 14px;
+    margin-bottom: 16px;
+  }
+
+  .mainContent__leftSide h1 {
+    font-size: 28px;
+    margin-bottom: 64px;
+  }
+
+  .mainContent__leftSide p {
+    max-width: 343px;
+    margin-bottom: 39px;
+  }
+
+  .mainContent__leftSide-btnList {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .mainContent__leftSide-btnList button {
+    display: flex;
+    gap: 10px;
+    padding: 15px 30px;
+    border-radius: 5px;
+    background: rgb(58, 104, 184);
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .logos {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+  }
+
+  .cardList {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    justify-items: center;
+    max-width: 362px;
+  }
+
+  .hidenCard {
+    display: none;
+  }
+
+  .card {
+    /* max-width: 362px; */
+    backdrop-filter: blur(200px);
+    background: #151D2A;
+  }
+
+}
