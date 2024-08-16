@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Seminar8.3</title>
+		<style>
+			input {
+				position: absolute;
+				left: -9999999px;
+				visibility: hidden;
+			}
+			input:checked ~ h1 {
+				color: red;
+			}
+		</style>
+	</head>
+	<body>
+		<form action="">
+			<input id="check" type="checkbox" />
+			<label for="check">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+					<path
+						d="M192 64C86 64 0 150 0 256S86 448 192 448l192 0c106 0 192-86 192-192s-86-192-192-192L192 64zm192 96a96 96 0 1 1 0 192 96 96 0 1 1 0-192z"
+					/>
+				</svg>
+			</label>
+			<h1>Заголовок</h1>
+		</form>
+		<audio controls loop preload="metadata" src="#"></audio><br />
+		<section class="video-box">
+			<h2 class="video-heading">Моя визитка</h2>
+			<video autoplay muted preload="metadata" src="./img/Шевченко АМ.mp4"></video>
+		</section>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+			}
+
+			.video-box {
+				height: 50vh;
+				width: 50vw;
+				position: relative;
+			}
+
+			.video-heading {
+				color: white;
+				position: absolute;
+				left: 40%;
+				right: 30%;
+				z-index: 5;
+			}
+
+			video {
+				height: 50vh;
+				width: 50vw;
+				position: absolute;
+			}
+		</style>
+	</body>
+</html>
