@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Lection7.Новые возможности CSS3</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<!-- :hover - эффкт наведения -->
+		<!-- :active - при активации жлемента -->
+		<!-- :focus - при получении фокуса элемента -->
+		<!-- :link - используется для непосещенных ссылок -->
+		<!-- :visited - исп-ся для ссылки на страницу, которую уже посетили -->
+
+		<!-- :first-child - выбор первого дочернего элемента
+		 :last-child - выбор последнего дочернего элемента
+		 :nth-child(n) - выбор n-го дочернего элемиента -->
+
+		<!-- Эффекты перехода: -св-во transition transition-roperty transition-duration - граница времени за которую происходит
+		изменение 
+		transition-timing-function - функция опр. скорость перехода объекта из одного сост. в другое
+		transition-delay - изм. происх не сразу а по истечению опр. времени -->
+
+		<!-- Кубик-безьер - это для тайминга transition -->
+
+		<!-- Трансформация - изм. размер форму и положение элемента
+		Не затрагивает остальные элементы
+		По умолчанию она происх отн. центра элемента
+		Не действует на строчные эл. display: inline. 
+		translate(x,y) - смещает эл. по координатам х и у
+		scale(x,y) - изм. масштаб по высоте и ширине
+		rotate(deg) - поворот элемента
+		skew(x-deg, y-deg)-->
+
+		<!-- Анимации - animista(генератор)
+		 animation - может ожевить страницу, добавить обр связь с пользов, применяется ко всем жлементам и
+		псевдоэлем. animation-name - позволяет указать имя анимации
+		animation-duration - скорость вып. анимации в сек
+		animation-timing-function - позв. задать плавность и скорость
+		animation-delay - задает задержку перед началом анимации
+		animation-iteration-count - сколько раз повторить анимацию -->
+
+		<section class="conteiner">
+			<div class="header">
+				<nav class="navigation">
+					<a class="header__link" href="#">Главная</a>
+					<a class="header__link" href="#">Обо мне</a>
+					<a class="header__link" href="#">Навыки</a>
+					<a class="header__link" href="#">Контакты</a>
+				</nav>
+				<div>
+					<h1>Алексей Кадочников</h1>
+					<a class="button" href="#">Заказать сайт</a>
+				</div>
+				<h1>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, id. Corporis cupiditate accusamus aut eius est
+					doloribus totam, et accusantium libero natus impedit illo sed fugit consequatur. Consectetur placeat rem
+					asperiores autem consequuntur quia doloremque
+				</h1>
+			</div>
+			<!-- Псевдоклассы и псевдоэлементы -->
+			<ul class="list text">
+				<li class="list__item">list-item-1</li>
+				<li class="list__item list__item_new">list-item-2</li>
+				<li class="list__item">list-item-3</li>
+				<li class="list__item list__item_new">list-item-4</li>
+				<li class="list__item">list-item-5</li>
+			</ul>
+			<!-- Работа с SVG -->
+			<div class="icons">
+				<svg class="icon" width="20" height="25" viewBox="0 0 20 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M20 12.5L0.500001 24.1913L0.500002 0.808657L20 12.5Z" fill="black" />
+				</svg>
+			</div>
+			<!-- Эффекты перехода -->
+			<div class="drive">
+				<div class="car car-1 bord__item-1">1</div>
+				<div class="car car-2 bord__item-2">2</div>
+				<div class="car car-3 bord__item-3">3</div>
+				<div class="car car-4">4</div>
+				<div class="car car-5">5</div>
+			</div>
+			<!-- Эффекты Трансформации transform: traslate, scale,  -->
+			<div class="bord">
+				<div class="bord__item bord__item-1">1</div>
+				<div class="bord__item bord__item-2">2</div>
+				<div class="bord__item bord__item-3">3</div>
+			</div>
+
+			<!-- Эффекты Трансформации transform: rotate  -->
+
+			<div class="bord2">
+				<div class="bord2__item bord2__item-1">1</div>
+				<div class="bord2__item bord2__item-2">2</div>
+				<div class="bord2__item bord2__item-3">3</div>
+			</div>
+			<!-- Эффекты Трансформации transform: skew  -->
+			<div class="bord3">
+				<div class="bord3__item bord3__item-1">1</div>
+			</div>
+			<div class="content">
+				<div class="item"></div>
+				<div class="item"></div>
+				<div class="item"></div>
+				<div class="item"></div>
+				<div class="item"></div>
+				<div class="item"></div>
+			</div>
+		</section>
+	</body>
+</html>
