@@ -19,7 +19,9 @@ img {
 h1,
 h2,
 h3,
+h4,
 p,
+li,
 button {
   font-family: Lato;
   font-weight: 400;
@@ -44,7 +46,7 @@ button {
 .leftButtons {
   display: flex;
   flex-direction: row;
-  align-items: flex-end;
+  align-items: center;
   gap: 41px;
 }
 
@@ -102,7 +104,7 @@ button {
   margin-left: 16px;
 }
 
-.text h1 {
+.text h2 {
   font-weight: 900;
   font-size: 48px;
   color: rgb(34, 34, 34);
@@ -126,10 +128,10 @@ button {
   padding: 32px 74px 32px 32px;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 10px;
 }
 
-.hiden {
+.hidden {
   display: none;
 }
 
@@ -137,6 +139,7 @@ button {
   font-weight: 700;
   font-size: 14px;
   color: #000;
+  margin-bottom: 14px;
 }
 
 .menu__active_items {
@@ -146,11 +149,14 @@ button {
   gap: 11px;
 }
 
-.menu__active_items h3 {
+.menu__active_items li,
+a {
+  list-style: none;
   font-weight: 400;
   font-size: 14px;
   color: #6f6e6e;
-  padding-left: 21.5px;
+  padding-left: 10px;
+  margin-bottom: 11px;
 }
 
 .menu__active_items-pink_item {
@@ -162,7 +168,6 @@ button {
 .conteiner {
   max-width: 1140px;
   margin: 0px auto 95px auto;
-
 }
 
 .options {
@@ -176,25 +181,25 @@ button {
 
 
 .card1 {
-  background-image: url(./img/forWomen.png);
+  background-image: url(./img/forWomen.webp);
   width: 360px;
   height: 260px;
 }
 
 .card2 {
-  background-image: url(./img/forMen.png);
+  background-image: url(./img/forMen.webp);
   width: 360px;
   height: 260px;
 }
 
 .card3 {
-  background-image: url(./img/forKids.png);
+  background-image: url(./img/forKids.webp);
   width: 360px;
   height: 260px;
 }
 
 .card4 {
-  background-image: url(./img/accesories.png);
+  background-image: url(./img/accesories.webp);
   width: 1140px;
   height: 180px;
 }
@@ -262,7 +267,7 @@ button {
 }
 
 .card__image_1 {
-  background-image: url(./img/product1.png);
+  background-image: url(./img/product1.webp);
   width: 360px;
   height: 420px;
   margin-bottom: 24px;
@@ -276,16 +281,19 @@ button {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-
 }
 
 .card__image_1:hover .card__hover {
   display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
 .card__hover-button {
   border: 1px solid #FFFFFF;
-  background-color: rgba(58, 56, 56, 0.86);
+  background-color: rgba(58, 56, 56, 0.7);
+  opacity: 0.7;
   padding: 11px 16px 9px 14px;
   display: flex;
   flex-direction: row;
@@ -293,6 +301,11 @@ button {
   justify-content: center;
   gap: 11px;
   cursor: pointer;
+}
+
+.card__hover-button a {
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
 }
 
 .card__hover-button span {
@@ -328,7 +341,7 @@ button {
 }
 
 .card__image_2 {
-  background-image: url(./img/product2.png);
+  background-image: url(./img/product2.webp);
   width: 360px;
   height: 420px;
   margin-bottom: 24px;
@@ -339,7 +352,7 @@ button {
 }
 
 .card__image_3 {
-  background-image: url(./img/product3.png);
+  background-image: url(./img/product3.webp);
   width: 360px;
   height: 420px;
   margin-bottom: 24px;
@@ -350,7 +363,7 @@ button {
 }
 
 .card__image_4 {
-  background-image: url(./img/product4.png);
+  background-image: url(./img/product4.webp);
   width: 360px;
   height: 420px;
   margin-bottom: 24px;
@@ -361,7 +374,7 @@ button {
 }
 
 .card__image_5 {
-  background-image: url(./img/product5.png);
+  background-image: url(./img/product5.webp);
   width: 360px;
   height: 420px;
   margin-bottom: 24px;
@@ -372,7 +385,7 @@ button {
 }
 
 .card__image_6 {
-  background-image: url(./img/product6.png);
+  background-image: url(./img/product6.webp);
   width: 360px;
   height: 420px;
   margin-bottom: 24px;
@@ -388,6 +401,12 @@ button {
   background: white;
   cursor: pointer;
   margin-bottom: 60px;
+}
+
+.pinkTextInProducts a {
+  color: rgb(241, 109, 127);
+  font-size: 16px;
+  line-height: 19px;
 }
 
 .products__bottomBtn:hover {
@@ -438,7 +457,7 @@ button {
 }
 
 .subscribe {
-  background-image: url(./img/subscribe_background.png);
+  background-image: url(./img/subscribe_background.webp);
   background-size: cover;
   background-repeat: no-repeat;
 }
